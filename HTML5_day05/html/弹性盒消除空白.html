@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>弹性盒消除空白</title>
+	<style type="text/css">
+	*{padding: 0;margin: 0;}
+	.container{
+		width:500px;
+		height: 300px;
+		display: -webkit-box;
+		border: 5px solid blue;
+		-webkit-box-orient: vertical;
+	}
+	.left{
+		background-color: red;
+		/*-webkit-box-flex:1;*/
+	}
+	.main{
+		background-color: #ccc;
+		-webkit-box-flex:1;
+	}
+	.right{
+		background: #999;
+		/*-webkit-box-flex:2;*/
+	}
+	.left ,.mian ,.right{
+	 -webkit-box-sizing: border-box;
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="left">我是left</div>
+		<div class="main">我是main</div>
+		<div class="right">buhaoasdsdsasda</div>
+	</div>
+</body>
+</html>

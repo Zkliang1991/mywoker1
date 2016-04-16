@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{padding: 0;margin: 0;}
+	    .container2{
+			display: flex;
+			margin: -10px 0 0 -10px;
+			width: 330px;height: 330px;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			/*border: 1px solid red;*/
+			display: box;
+			box-align: center;
+			box-pack: center; 
+			overflow: hidden;
+		}
+		.con{
+			width: 320px;height: 320px;
+			margin: 100px auto;
+			border: 1px solid red;
+		}
+		.box2{
+			width: 100px;
+			height: 100px;
+			line-height: 100px;color:#fff;font-family: "微软雅黑";font-size: 20px;
+			text-align: center;
+			margin: 10px 0 0 10px;
+			/*margin: 10px;*/
+			/*flex: 1;*/
+			/*flex-basis: 30%;*/
+			background: #ccc;
+		}
+.box {
+			width: 340px;
+			height: 340px;
+/*  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal; 
+  -webkit-box-pack: justify; 
+  -webkit-box-align: center; */
+  display: flex; 
+  flex-direction: column; 
+/*  flex-wrap: nowrap; 
+  align-items: center; */
+  justify-content: space-between; 
+  
+}
+.bo{
+	width: 100px;
+	height: 100px;background: #ccc;
+	height: 100px;
+	line-height: 100px;color:#fff;font-family: "微软雅黑";font-size: 20px;
+	text-align: center;
+}
+.top,.middle,.bottom {
+  width: 100%;
+/*  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal; 
+  -webkit-box-pack: justify; 
+  -webkit-box-align: center; */
+  display: flex; 
+  /*flex-direction: row; */
+  /*flex-wrap: nowrap; */
+  justify-content: space-between;
+  /*align-items: center; */
+}
+.top,.middle,.bottom,.left,.center,.right {
+/*  -webkit-box-flex: 0;
+  flex-basis: auto;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex: 0 0 auto;*/
+}
+/*.top,.left {
+  -webkit-box-ordinal-group: 1;
+  order: 1;
+}
+.middle,.center {
+  -webkit-box-ordinal-group: 2;
+  order: 2;
+}
+.bottom,.right {
+  -webkit-box-ordinal-group: 3;
+  order: 3;
+}*/
+
+
+		.container1{
+			width: 320px;height: 320px;
+			margin: 0 auto;
+			border: 1px solid red;
+		}
+		.wrap{
+			margin: -10px 0 0 -10px;
+			width: 330px;height: 330px;
+			overflow: hidden;
+		}
+		.box1{
+			float: left;
+			margin: 10px 0 0 10px;
+			width: 100px;height: 100px;line-height: 100px;color:#fff;font-family: "微软雅黑";font-size: 20px;
+			text-align: center;
+			background: #ccc;
+		}
+	</style>
+</head>
+<body>
+<div class="box">
+    <div class="top">
+        <div class="bo left">左上</div>
+        <div class="bo center">上</div>
+        <div class="bo right">右上</div>
+    </div>
+    <div class="middle">
+        <div class="bo left">左</div>
+        <div class="bo center">中</div>
+        <div class="bo right">右</div>
+    </div>
+    <div class="bottom">
+        <div class="bo left">左下</div>
+        <div class="bo center">下</div>
+        <div class="bo right">右下</div>
+    </div>
+</div>
+
+	<div class="container1">
+		<div class="wrap">
+			<div class="box1">1</div>
+			<div class="box1">2</div>
+			<div class="box1">3</div>
+			<div class="box1">4</div>
+			<div class="box1">5</div>
+			<div class="box1">6</div>
+			<div class="box1">7</div>
+			<div class="box1">8</div>
+			<div class="box1">9</div>
+		</div>
+	</div>
+<div class="con">
+	<div class="container2">
+		<div class="box2">1</div>
+		<div class="box2">2</div>
+		<div class="box2">3</div>
+		<div class="box2">4</div>
+		<div class="box2">5</div>
+		<div class="box2">6</div>
+		<div class="box2">7</div>
+		<div class="box2">8</div>
+		<div class="box2">9</div>
+	</div>
+</div>
+</body>
+</html>

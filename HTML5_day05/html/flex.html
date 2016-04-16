@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+.container {
+  display: flex;
+  flex-flow: row wrap;
+}
+.main {
+  width: 60%;
+  background-color: red;
+  height: 200px;
+}
+.left {
+  flex: 1;
+  /*-webkit-box-flex: 1;*/
+  /*width: 20%;*/
+  background-color: #ccc;
+}
+.right {
+  flex: 3;
+  /*-webkit-box-flex: 3;*/
+  /*width: 20%;*/
+  background-color: #ccc;
+}
+/*.right1{
+	background-color: #000;
+	width: 20%;
+	height: 200px;
+}*/
+
+	</style>
+</head>
+<body>
+<!-- 这是一个很简单的实例，Flexbox创建了一个经典的三列布局。主内容宽度为60%，而边栏是使用“flex”属性，按比例自动根据伸缩容器剩余空间计算得到对应的宽度： -->
+<div class="container">
+  <nav class="nav left">…</nav>
+ 
+  <section class="main">
+    …
+  </section>
+ 
+  <nav class="nav right">…</nav>
+   <!-- <nav class="nav right1">…</nav> -->
+</div>
+</body>
+</html>

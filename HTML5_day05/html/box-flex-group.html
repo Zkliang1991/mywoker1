@@ -1,0 +1,20 @@
+<head>
+<meta charset="utf-8" />
+<title>box-flex-group</title>
+<style>
+h1{font:bold 20px/1.5 georgia,simsun,sans-serif;}
+.box{display:-webkit-box;display:-moz-box;display:-ms-box;background:#000;width:240px;height:100px;margin:0;padding:10px;list-style:none;vertical-align:top;}
+.box li:nth-child(1){-webkit-box-flex:1;-moz-box-flex:1;-ms-box-flex:1;-webkit-box-flex-group:1;-moz-box-flex-group:1;-ms-box-flex-group:1;background:#666;}
+.box li:nth-child(2){-webkit-box-flex:1;-moz-box-flex:1;-ms-box-flex:1;-webkit-box-flex-group:2;-moz-box-flex-group:2;-ms-box-flex-group:2;background:#999;}
+.box li:nth-child(3){-webkit-box-flex:1;-moz-box-flex:1;-ms-box-flex:1;-webkit-box-flex-group:1;-moz-box-flex-group:1;-ms-box-flex-group:1;background:#ccc;}
+</style>
+</head>
+<body>
+<h1>box-flex-group</h1>
+<ul id="box" class="box">
+	<li>a</li>
+	<li>b</li>
+	<li>c</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>盒布局</title>
+	<style type="text/css">
+	*{padding: 0;margin: 0;}
+	.container{
+		display: -webkit-box;
+		/*-webkit-box-lines:multiple;*/
+		/*-webkit-box-orient: vertical;*/
+		/*-webkit-box-direction: reverse;*/
+
+	}
+	.left{
+		width: 200px;
+		padding: 20px;background: orange;
+		-webkit-box-ordinal-group: 2;
+	}
+	.middle{
+		/*width: 500px;*/
+		-webkit-box-flex:1;
+		padding: 20px;background: red;
+		-webkit-box-ordinal-group:3;
+	}
+	.right{
+		-webkit-box-ordinal-group: 1;
+		width: 400px;
+		padding: 20px;background: #ccc;
+
+	}
+	.main{
+		display: -webkit-box;
+		-webkit-box-align: center;
+		width: 200px;height: 100px;
+		background: #ccc;
+		-webkit-box-pack: center;
+	}
+	</style>
+</head>
+<body>
+
+<!-- box-orient           子元素排列 vertical or horizontal
+box-flex             兄弟元素之间比例，仅作一个系数
+box-align : start|end|center|baseline|stretch;         box 排列  
+box-pack  start|end|center|justify; 
+box-direction   normal   reverse box 方向
+box-flex-group       以组为单位的流体系数
+box-ordinal-group    以组为单位的子元素排列方向 -->
+	<div class="container">
+	<div class="left">
+		<p>左侧边栏</p>
+		<ul>
+			<li><a href="#">超链接</a></li>
+			<li><a href="#">超链接</a></li>
+			<li><a href="#">超链接</a></li>
+			<li><a href="#">超链接</a></li>
+			<li><a href="#">超链接</a></li>
+			<li><a href="#">超链接</a></li>
+			<li><a href="#">超链接</a></li>
+			<li><a href="#">超链接</a></li>
+			<li><a href="#">超链接</a></li>
+			<li><a href="#">超链接</a></li>
+		</ul>
+	</div>
+	<div class="middle">
+		<h2>内容</h2>
+		<p>这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容</p>
+	</div>
+	<div class="right">
+		<p>右侧边栏</p>
+		<ul>
+			<li><a href="#">超链接</a></li>
+			<li><a href="#">超链接</a></li>
+			<li><a href="#">超链接</a></li>
+		</ul>
+	</div>
+	</div>
+
+	<div class="main">
+		<p>我是局中</p>
+	</div>
+</body>
+</html>

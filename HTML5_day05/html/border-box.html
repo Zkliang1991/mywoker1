@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>box-sizing</title>
+	<style type="text/css">
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	div{
+		margin: 0 auto;
+		border: 30px solid red;
+		width: 300px;
+		height: 300px;
+		padding: 40px;
+	}
+	.box1{
+		box-sizing: content-box;
+	}
+	.box2{
+
+		box-sizing: border-box;
+	}
+	</style>
+</head>
+<body>
+	<div class="box1">今天回家啦啦啦拉拉阿拉啦啦啦啦啦啦啦今天回家啦啦啦拉拉阿拉啦啦啦啦啦啦啦今天回家啦啦啦拉拉阿拉啦啦啦啦啦啦啦今天回家啦啦啦拉拉阿拉啦啦啦啦啦啦啦今天回家啦啦啦拉拉阿拉啦啦啦啦啦啦啦今天回家啦啦啦拉拉阿拉啦啦</div>
+	<div class="box2">今天回家啦啦啦拉拉阿拉啦啦啦啦啦啦啦今天回家啦啦啦拉拉阿拉啦啦啦啦啦啦啦今天回家啦啦啦拉拉阿拉啦啦啦啦啦啦啦今天回家啦啦啦拉拉阿拉啦啦啦啦啦啦啦今天回家啦啦啦拉拉阿拉啦啦啦啦啦啦啦今天</div>
+</body>
+</html>

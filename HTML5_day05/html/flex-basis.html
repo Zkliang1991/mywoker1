@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8" />
+<title>flex-basis</title>
+
+<style>
+h1{font:bold 20px/1.5 georgia,simsun,sans-serif;}
+.box{
+	display:-webkit-flex;
+	display:flex;
+	width:600px;margin:0;
+	padding:10px;list-style:none;background-color:#eee;}
+.box li{width:100px;height:100px;border:1px solid #aaa;text-align:center;}
+#box li:nth-child(3){
+	-webkit-flex-basis:600px;
+	flex-basis:600px;
+}
+</style>
+</head>
+<body>
+<!-- <length>：
+用长度值来定义宽度。不允许负值
+<percentage>：
+用百分比来定义宽度。不允许负值
+auto：
+无特定宽度值，取决于其它属性值
+content：
+如果所有子元素的基准值之和大于剩余空间，则会根据每项设置的基准值，按比率伸缩剩余空间
+基于内容自动计算宽度 -->
+<h1>flex-basis示例：</h1>
+<ul id="box" class="box">
+	<li>a</li>
+	<li>b</li>
+	<li>c</li>
+	<li>d</li>
+	<li>e</li>
+</ul>
+</body>
+</html>

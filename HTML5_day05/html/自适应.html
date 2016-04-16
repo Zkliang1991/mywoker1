@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "utf-8" />
+	<title></title>
+	<style type="text/css">
+		.demo{
+			/*flex布局（作用于容器）*/
+			display: -webkit-flex;
+		 
+			/*项目拉伸对齐，也就是所左边的高度为拉伸到和右边底部对齐*/
+			/*-webkit-align-items: flex-end;*/
+		}
+		 
+		.demo .left{
+			/*左边固定宽度，必须设置其最小宽度和最大宽度*/
+			width: 100px;
+			min-width: 100px;
+			max-width: 100px;
+		 
+			/*高度自由分配*/
+			height: auto;
+			background: #B4D3F7;
+
+		}
+		 
+		.demo .center{
+			margin: 0 10px;
+			width: auto;
+			height: 200px;
+			background: #F7E8B4;
+		 
+
+			-webkit-flex:1;
+		}
+		 
+		.demo .right{
+			/*右边固定宽度，必须设置其最小宽度和最大宽度*/
+			width: 150px;
+			min-width: 150px;
+			max-width: 150px;
+		 
+			/*高度自由分配*/
+			height: auto;
+			background: #CBFFD2;
+		}
+	</style>
+</head>
+<body>
+	<div class="demo">
+		<div class="left">左边固定宽度为100px，这里设置了高度为auto</div>
+		<div class="center">中间宽度自适应，并且左中右两个区域是等高的，这里设置了高度为200px</div>
+		<div class="right">右边固定宽度为150px，这里设置了高度为auto</div>
+	</div>
+</body>
+</html>
